@@ -35,5 +35,14 @@ export default class App {
 
     this._root.appendChild(sidebar.getElement());
     this._root.appendChild(pageContainer);
+
+    pageContainer.onscroll = ()=> {
+      if (pageContainer.scrollTop > 50){
+        header.shrinkHeader();
+      }
+      else{
+        header.unShrinkHeader();
+      }
+    };
   }
 }

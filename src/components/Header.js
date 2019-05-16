@@ -29,7 +29,18 @@ export default class Header {
     this._container.appendChild(logoContainer);
     this._container.appendChild(title);
     this._container.appendChild(exportButtons.getElement());
+    this._exportButtons = exportButtons;
 
     return this._container;
+  }
+
+  shrinkHeader () {
+    this._container.className = "header-shrink";
+    this._exportButtons.removeTitle();
+  }
+
+  unShrinkHeader () {
+    this._container.className = "header";
+    this._exportButtons.addTitle();
   }
 }

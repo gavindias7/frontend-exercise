@@ -22,6 +22,7 @@ export default class ExportButtons {
     const title = document.createElement("h2");
     title.className = "export-buttons-title";
     title.innerText = "Export";
+    this._title = title;
 
     const pdfButton = new IconButton("file-pdf");
     const excelButton = new IconButton("file-excel");
@@ -36,6 +37,18 @@ export default class ExportButtons {
     this._container.append(title);
     this._container.append(buttonContainer);
 
+    this._buttonContainer = buttonContainer;
+
     return this._container;
   }
+
+  removeTitle() {
+    this._container.children[0].style.display = "none";
+  }
+
+  addTitle() {
+    this._container.children[0].style.display = "block";
+  }
+
+
 }
