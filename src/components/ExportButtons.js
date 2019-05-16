@@ -42,10 +42,12 @@ export default class ExportButtons {
     return this._container;
   }
 
+  //Hide Title
   removeTitle() {
     this._container.children[0].style.display = "none";
   }
 
+  //Un-Hide Title
   addTitle() {
     this._container.children[0].style.display = "block";
   }

@@ -34,11 +34,13 @@ export default class Header {
     return this._container;
   }
 
+  //Function to change the class from header to header-shrink and hide Export Title
   shrinkHeader () {
     this._container.className = "header-shrink";
     this._exportButtons.removeTitle();
   }
 
+  //Function to change the class from header-shrink to header and un-hide Export Title
   unShrinkHeader () {
     this._container.className = "header";
     this._exportButtons.addTitle();

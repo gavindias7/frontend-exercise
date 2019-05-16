@@ -36,6 +36,7 @@ export default class App {
     this._root.appendChild(sidebar.getElement());
     this._root.appendChild(pageContainer);
 
+    // Detecting scroll and calling Shrink header function
     pageContainer.onscroll = ()=> {
       if (pageContainer.scrollTop > 50){
         header.shrinkHeader();

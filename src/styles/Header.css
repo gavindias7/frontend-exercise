@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
-  width: 80%;/* padding */
-  transition: all 0.4s ease;
+  position: fixed;  /* position is fixed */
+  width: 80%;
+  transition: all 0.3s ease;
 
   background: var(--color-bg);
-  padding: 25px 100px; /* padding */
+  padding: 25px 100px; /* Improved padding for better visual */
 
   box-shadow: 0 3px 3px var(--color-shadow);
 }
@@ -23,24 +23,26 @@
   flex-grow: 1;
 }
 
+
+/* created new class header-shrink */
 .header-shrink {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: fixed;
-  width: 89%;/* padding */
-  transition: all 0.2s ease;
+  width: 89%;
+  transition: all 0.2s ease; /* For smooth transition animation */
   color: aliceblue;
 
   box-shadow: 0 3px 3px var(--color-shadow);
   padding: 10px 30px; /* padding */
-  background: rgb(0, 97, 177);
+  background: rgb(0, 97, 177); /* Added background color */
 }
 
 .header-shrink .logo-container {
   height: 40px;
   width: 40px;
-  background: url("../assets/logo-shrink.png");
+  background: url("../assets/logo-shrink.png"); /* Shrinked logo */
   background-repeat:no-repeat; 
   margin-right: 8px;
 }
