@@ -33,4 +33,9 @@ export default class Sidebar {
 
     return this._container;
   }
+
+  sidebarToggle(){
+    console.log("clicked");
+    this._container.classList.toggle('sidebar-active');
+  }
 }

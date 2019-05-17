@@ -25,7 +25,22 @@ export default class Header {
     const title = document.createElement("h1");
     title.innerText = "Chuck's Ducks";
 
+    //creating new burger element
+    const burger = document.createElement("div");
+    burger.className = "burger";
+    const line1 = document.createElement("div");
+    line1.className = "line1";
+    const line2 = document.createElement("div");
+    line2.className = "line2";
+    const line3 = document.createElement("div");
+    line3.className = "line3";
+
+    burger.appendChild(line1);
+    burger.appendChild(line2);
+    burger.appendChild(line3);
+
     const exportButtons = new ExportButtons();
+    this._container.appendChild(burger);
     this._container.appendChild(logoContainer);
     this._container.appendChild(title);
     this._container.appendChild(exportButtons.getElement());

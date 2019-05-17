@@ -2,12 +2,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;  /* position is fixed */
-  width: 80%;
   transition: all 0.3s ease;
-
   background: var(--color-bg);
-  padding: 25px 100px; /* Improved padding for better visual */
+  padding: 25px 50px; /* Improved padding for better visual */
 
   box-shadow: 0 3px 3px var(--color-shadow);
 }
@@ -29,8 +26,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
-  width: 89%;
+  position: absolute;  /* position is fixed */
+  width: 97%;
   transition: all 0.2s ease; /* For smooth transition animation */
   color: aliceblue;
 
@@ -49,4 +46,36 @@
 
 .header-shrink h1 {
   flex-grow: 1;
+}
+
+.header .burger div{
+  background-color:black;
+}
+
+/* for the burger button for sidebar */
+.burger{
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  margin-right: 30px;
+  background-color: aliceblue;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Burger <-> X animation */
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }

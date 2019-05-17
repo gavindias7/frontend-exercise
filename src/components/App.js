@@ -45,5 +45,17 @@ export default class App {
         header.unShrinkHeader();
       }
     };
+
+    // Toggle sidebar
+    pageContainer.children[0].children[0].addEventListener('click', () => { 
+      // Toggle bar
+      sidebar.sidebarToggle();
+
+      // Animate Burger
+      pageContainer.children[0].children[0].classList.toggle('toggle');
+
+      // Animate Margin
+      this._root.classList.toggle('marginToggle');
+    });
   }
 }

@@ -45,11 +45,13 @@ export default class ExportButtons {
   //Hide Title
   removeTitle() {
     this._container.children[0].style.display = "none";
+    this._container.style.marginRight = "128px";
   }
 
   //Un-Hide Title
   addTitle() {
     this._container.children[0].style.display = "block";
+    this._container.style.marginRight = "0px";
   }
 
 
